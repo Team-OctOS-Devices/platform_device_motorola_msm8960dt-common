@@ -83,7 +83,9 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm8960
+    camera.msm8960 \
+    libboringssl-compat \
+    libshim_qcopt
 
 # CRDA
 PRODUCT_PACKAGES += \
@@ -176,6 +178,13 @@ PRODUCT_PACKAGES += \
     init.qcom.power.rc \
     init.recovery.qcom.rc \
     ueventd.qcom.rc
+
+# Shim libraries
+PRODUCT_PACKAGES += \
+     libshim_camera \
+     libshim_log \
+     libshim_mdmcutback \
+     libshim_ril \
 
 # Support
 PRODUCT_PACKAGES += \
