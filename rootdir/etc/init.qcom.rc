@@ -444,7 +444,6 @@ service hciattach /system/bin/sh /system/etc/init.qcom.bt.sh
     class late_start
     user bluetooth
     group bluetooth net_bt_admin
-    seclabel u:r:bluetooth_loader:s0
     disabled
     oneshot
 
@@ -537,7 +536,6 @@ service wcnss_trigger /system/bin/sh /system/etc/init.qcom.wifi.sh ${ro.serialno
     class main
     user root
     group root
-    seclabel u:r:wcnss_service:s0
     oneshot
 
 # WPA
